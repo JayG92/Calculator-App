@@ -1,0 +1,30 @@
+*, *::before, ::afterm {
+box-sizing: border-box;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-weight: normal;
+}
+
+body {
+    /* remove all padding and margin so background color will fill in whole screem */
+    padding: 0;
+    margin: 0;
+    /* this code below allows background to be in a gradient style going from left to right */
+    background: linear-gradient(to right, rgb(11, 179, 221),rgb(185, 12, 185));
+
+}
+
+/* styles the calculator grid */
+.calculator-grid {
+
+    display: grid;
+
+    justify-content: center;
+
+    align-items: center;
+
+    min-height: 100vh;
+
+    grid-template-columns: repeat(4, 100px);
+
+    grid-template-rows: repeat(4, 100px);
+}
